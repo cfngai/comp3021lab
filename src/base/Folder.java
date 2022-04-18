@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Folder implements Comparable<Folder>, Serializable{
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 9020159955693642552L;
 	private ArrayList<Note> notes;
 	private String name;
 	

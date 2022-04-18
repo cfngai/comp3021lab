@@ -11,7 +11,7 @@ import java.util.List;
 
 public class NoteBook implements Serializable {
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 9020159955693642552L;
 	private ArrayList<Folder> folders;
 	
 	public NoteBook() {
@@ -67,6 +67,18 @@ public class NoteBook implements Serializable {
 		folder.addNote(note);
 		return true;
 
+	}
+	
+	public void addFolder(String folderName) {
+		Folder folder = null;
+		for (Folder _folder : folders) {
+			if (_folder.getName().equals(folderName)) {
+				folder = _folder; break;
+			}
+		}
+		if (folder==null) {
+			folder = new Folder(folderName); folders.add(folder);
+		}
 	}
 	
 	public void sortFolders() {
