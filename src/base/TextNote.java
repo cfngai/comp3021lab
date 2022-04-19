@@ -24,6 +24,10 @@ public class TextNote extends Note{
 		this.content = getTextFromFile(f.getAbsolutePath());
 	}
 	
+	public void setContent(String content) {
+		this.content = content;
+	}
+	
 	public String getContent() {
 		return this.content;
 	}
