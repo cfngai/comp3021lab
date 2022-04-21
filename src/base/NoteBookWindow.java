@@ -150,6 +150,7 @@ public class NoteBookWindow extends Application {
 			
 			
 			File file = fileChooser.showSaveDialog(stage);
+			if (file==null) return;
 			if (noteBook.save(file.getAbsolutePath())) {
 				Alert alert = new Alert(AlertType.INFORMATION);
 				alert.setTitle("Successfully saved");
