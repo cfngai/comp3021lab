@@ -462,7 +462,7 @@ public class NoteBookWindow extends Application {
 
 		});
 		
-		ImageView deleteView = new ImageView(new Image(new File("save.png").toURI().toString()));
+		ImageView deleteView = new ImageView(new Image(new File("delete.png").toURI().toString()));
 		deleteView.setFitHeight(18);
 		deleteView.setFitWidth(18);
 		deleteView.setPreserveRatio(true);
